@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Problem 2</title>
+  </head>
+  <body>
+    <!-- You may reorganise the whole HTML, as long as your form achieves the same effect. -->
+    <form onsubmit="return !1">
+      <h1>Swap</h1>
+      <div class="box">
+        <label for="token1">Select token type</label>
+        <select name="token" id="token1"></select>
+        <!-- <br /> -->
+        <label for="input-amount">Amount to send</label>
+        <input type="Number" id="input-amount" value="0" />
+      </div>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        fill="currentColor"
+        class="bi bi-caret-down-fill"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+        />
+      </svg>
+      <div class="box">
+        <label for="token2">Select token type</label>
+        <select name="token" id="token2"></select>
+        <!-- <br /> -->
+        <label for="output-amount">Amount to receive</label>
+        <input type="text" id="output-amount" />
+      </div>
+
+      <p id="conversion-rate">1 BLUR = 1 BLUR</p>
+
+      <button>CONFIRM SWAP</button>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
